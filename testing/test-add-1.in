@@ -1,0 +1,8 @@
+# Testing adding of files and the failure cases.
+> init
+<<<
++ bar.txt bar.txt
+> add bar.txt
+<<<
+> branch initialBranch
+<<<

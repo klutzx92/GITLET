@@ -1,0 +1,27 @@
+# testing basic merge conflict
+> init
+<<<
++ bar.txt bar.txt
+> add bar.txt
+<<<
+> commit "added bar"
+<<<
+> branch testing
+<<<
++ bar.txt update.txt
+> add bar.txt
+<<<
+> commit "changed bar in master"
+<<<
+> checkout testing
+<<<
+= bar.txt bar.txt
++ bar.txt update-2.txt
+> add bar.txt
+<<<
+> commit "changed bar in testing"
+<<<
+> merge master
+Encountered a merge conflict.
+<<<
+

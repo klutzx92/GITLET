@@ -1,0 +1,31 @@
+#Test the order of the status
+
+> init
+<<<
+> branch zBranch
+<<<
+> branch aBranch
+<<<
++ z.txt f.txt
+> add z.txt
+<<<
++ a.txt g.txt
+> add a.txt
+<<<
+> status
+=== Branches ===
+aBranch
+*master
+zBranch
+
+=== Staged Files ===
+a.txt
+z.txt
+
+=== Removed Files ===
+
+=== Modifications Not Staged For Commit ===
+
+=== Untracked Files ===
+
+<<<

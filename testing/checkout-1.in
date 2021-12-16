@@ -1,0 +1,49 @@
+#testing checkout
+> init
+<<<
++ bar.txt bar.txt
+> add bar.txt
+<<<
+> commit "added bar"
+<<<
+> branch testing
+<<<
++ foo.txt foo.txt
+> add foo.txt
+<<<
+> commit "added foo"
+<<<
+> checkout testing
+<<<
+* foo.txt
++ foo.txt modified-1.txt
+> add foo.txt
+<<<
+> commit "added foo with contents of modified-1"
+<<<
+> checkout master
+<<<
+= foo.txt foo.txt
++ test.txt test.txt
+> add test.txt
+<<<
+> commit "added test"
+<<<
+> rm foo.txt
+<<<
+> commit "removed foo"
+<<<
+> checkout testing
+<<<
+* test.txt
++ foo.txt modified-2.txt
+> add foo.txt
+<<<
+> commit "added foo with contents of modified-2"
+<<<
+> checkout master
+<<<
++ foo.txt foo.txt
+> checkout testing
+There is an untracked file in the way; delete it or add it first.
+<<<
