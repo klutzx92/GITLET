@@ -10,7 +10,7 @@ Author: David Oh
 
 Make any local directory version controlled by copy and pasting the gitlet directory into it.
 Then cd into your directory using the command line and type 'java gitlet.Main init' to initialize the repo.
-Now you can use any of the following commainds using 'java gitlet.Main <command> <args>'.
+Now you can use any of the following commands using 'java gitlet.Main <command> <args>'.
 Enjoy!
 
 Classes and Data Structures
